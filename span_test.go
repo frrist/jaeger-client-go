@@ -18,12 +18,12 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/opentracing/opentracing-go"
-	"github.com/opentracing/opentracing-go/ext"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go/ext"
 
-	"github.com/uber/jaeger-client-go/internal/throttler"
+	"github.com/frrist/jaeger-client-go/internal/throttler"
 )
 
 func TestBaggageIterator(t *testing.T) {

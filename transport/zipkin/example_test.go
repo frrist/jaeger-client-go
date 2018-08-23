@@ -17,10 +17,10 @@ package zipkin_test
 import (
 	"log"
 
-	"github.com/opentracing/opentracing-go"
-	"github.com/uber/jaeger-client-go"
-	jlog "github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-client-go/transport/zipkin"
+	"github.com/frrist/jaeger-client-go"
+	jlog "github.com/frrist/jaeger-client-go/log"
+	"github.com/frrist/jaeger-client-go/transport/zipkin"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 )
 
 func ExampleNewHTTPTransport() {

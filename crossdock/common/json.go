@@ -20,11 +20,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/uber/jaeger-client-go/crossdock/thrift/tracetest"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/frrist/jaeger-client-go/crossdock/thrift/tracetest"
+	"github.com/frrist/jaeger-client-go/utils"
 
-	"github.com/opentracing/opentracing-go"
-	"github.com/opentracing/opentracing-go/ext"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go/ext"
 )
 
 // PostJSON sends a POST request to `url` with body containing JSON-serialized `req`.

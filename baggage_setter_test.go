@@ -17,13 +17,13 @@ package jaeger
 import (
 	"testing"
 
-	"github.com/opentracing/opentracing-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/uber/jaeger-lib/metrics"
 	"github.com/uber/jaeger-lib/metrics/testutils"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
-	"github.com/uber/jaeger-client-go/internal/baggage"
+	"github.com/frrist/jaeger-client-go/internal/baggage"
 )
 
 func withTracerAndMetrics(f func(tracer *Tracer, metrics *Metrics, factory *metrics.LocalFactory)) {

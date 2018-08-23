@@ -24,13 +24,13 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/opentracing/opentracing-go"
-	"github.com/opentracing/opentracing-go/ext"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go/ext"
 
-	"github.com/uber/jaeger-client-go/crossdock/common"
-	"github.com/uber/jaeger-client-go/crossdock/endtoend"
-	"github.com/uber/jaeger-client-go/crossdock/log"
-	"github.com/uber/jaeger-client-go/crossdock/thrift/tracetest"
+	"github.com/frrist/jaeger-client-go/crossdock/common"
+	"github.com/frrist/jaeger-client-go/crossdock/endtoend"
+	"github.com/frrist/jaeger-client-go/crossdock/log"
+	"github.com/frrist/jaeger-client-go/crossdock/thrift/tracetest"
 )
 
 // Server implements S1-S3 servers

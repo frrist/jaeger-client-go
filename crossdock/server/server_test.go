@@ -19,14 +19,14 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opentracing/opentracing-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/crossdock/common"
-	"github.com/uber/jaeger-client-go/crossdock/log"
-	"github.com/uber/jaeger-client-go/crossdock/thrift/tracetest"
+	"github.com/frrist/jaeger-client-go"
+	"github.com/frrist/jaeger-client-go/crossdock/common"
+	"github.com/frrist/jaeger-client-go/crossdock/log"
+	"github.com/frrist/jaeger-client-go/crossdock/thrift/tracetest"
 )
 
 func TestServerJSON(t *testing.T) {

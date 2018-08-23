@@ -1,4 +1,4 @@
-PROJECT_ROOT=github.com/uber/jaeger-client-go
+PROJECT_ROOT=github.com/frrist/jaeger-client-go
 PACKAGES := $(shell glide novendor | grep -v -e ./thrift-gen/... -e ./thrift/...)
 # all .go files that don't exist in hidden directories
 ALL_SRC := $(shell find . -name "*.go" | grep -v -e vendor -e thrift-gen -e ./thrift/ \
@@ -85,7 +85,7 @@ thrift: idl-submodule thrift-image
 	$(THRIFT) -o /data --gen go:$(THRIFT_GO_ARGS) --out /data/crossdock/thrift/ /data/idl/thrift/crossdock/tracetest.thrift
 	sed -i '' 's|"zipkincore"|"$(PROJECT_ROOT)/thrift-gen/zipkincore"|g' $(THRIFT_GEN_DIR)/agent/*.go
 	sed -i '' 's|"jaeger"|"$(PROJECT_ROOT)/thrift-gen/jaeger"|g' $(THRIFT_GEN_DIR)/agent/*.go
-	sed -i '' 's|"github.com/apache/thrift/lib/go/thrift"|"github.com/uber/jaeger-client-go/thrift"|g' \
+	sed -i '' 's|"github.com/apache/thrift/lib/go/thrift"|"github.com/frrist/jaeger-client-go/thrift"|g' \
 		$(THRIFT_GEN_DIR)/*/*.go crossdock/thrift/tracetest/*.go
 	rm -rf thrift-gen/*/*-remote
 	rm -rf crossdock/thrift/*/*-remote

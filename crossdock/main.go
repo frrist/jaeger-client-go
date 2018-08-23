@@ -18,14 +18,14 @@ import (
 	"io"
 	"os"
 
-	"github.com/opentracing/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/crossdock/client"
-	"github.com/uber/jaeger-client-go/crossdock/common"
-	"github.com/uber/jaeger-client-go/crossdock/log"
-	"github.com/uber/jaeger-client-go/crossdock/server"
-	jlog "github.com/uber/jaeger-client-go/log"
+	"github.com/frrist/jaeger-client-go"
+	"github.com/frrist/jaeger-client-go/crossdock/client"
+	"github.com/frrist/jaeger-client-go/crossdock/common"
+	"github.com/frrist/jaeger-client-go/crossdock/log"
+	"github.com/frrist/jaeger-client-go/crossdock/server"
+	jlog "github.com/frrist/jaeger-client-go/log"
 )
 
 func main() {

@@ -17,10 +17,10 @@ package jaeger
 import (
 	"time"
 
-	"github.com/opentracing/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
-	j "github.com/uber/jaeger-client-go/thrift-gen/jaeger"
-	"github.com/uber/jaeger-client-go/utils"
+	j "github.com/frrist/jaeger-client-go/thrift-gen/jaeger"
+	"github.com/frrist/jaeger-client-go/utils"
 )
 
 // BuildJaegerThrift builds jaeger span based on internal span.

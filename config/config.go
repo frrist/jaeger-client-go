@@ -21,13 +21,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opentracing/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/internal/baggage/remote"
-	throttler "github.com/uber/jaeger-client-go/internal/throttler/remote"
-	"github.com/uber/jaeger-client-go/rpcmetrics"
-	"github.com/uber/jaeger-client-go/transport"
+	"github.com/frrist/jaeger-client-go"
+	"github.com/frrist/jaeger-client-go/internal/baggage/remote"
+	throttler "github.com/frrist/jaeger-client-go/internal/throttler/remote"
+	"github.com/frrist/jaeger-client-go/rpcmetrics"
+	"github.com/frrist/jaeger-client-go/transport"
 )
 
 const defaultSamplingProbability = 0.001

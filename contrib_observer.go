@@ -15,7 +15,7 @@
 package jaeger
 
 import (
-	opentracing "github.com/opentracing/opentracing-go"
+	opentracing "gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 )
 
 // ContribObserver can be registered with the Tracer to receive notifications

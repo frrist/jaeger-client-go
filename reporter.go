@@ -20,9 +20,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/opentracing/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
-	"github.com/uber/jaeger-client-go/log"
+	"github.com/frrist/jaeger-client-go/log"
 )
 
 // Reporter is called by the tracer when a span is completed to report the span to the tracing collector.
@@ -170,7 +170,7 @@ type reporterQueueItem struct {
 
 type remoteReporter struct {
 	// These fields must be first in the struct because `sync/atomic` expects 64-bit alignment.
-	// Cf. https://github.com/uber/jaeger-client-go/issues/155, https://goo.gl/zW7dgq
+	// Cf. https://github.com/frrist/jaeger-client-go/issues/155, https://goo.gl/zW7dgq
 	queueLength int64
 	closed      int64 // 0 - not closed, 1 - closed
 

@@ -18,13 +18,13 @@ import (
 	"context"
 	"testing"
 
-	jaeger "github.com/uber/jaeger-client-go"
+	jaeger "github.com/frrist/jaeger-client-go"
 
-	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
+	opentracing "gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 )
 
 func TestTraceField(t *testing.T) {

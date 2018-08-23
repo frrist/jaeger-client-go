@@ -17,10 +17,10 @@ package jaeger
 import (
 	"time"
 
-	"github.com/opentracing/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
-	"github.com/uber/jaeger-client-go/internal/baggage"
-	"github.com/uber/jaeger-client-go/internal/throttler"
+	"github.com/frrist/jaeger-client-go/internal/baggage"
+	"github.com/frrist/jaeger-client-go/internal/throttler"
 )
 
 // TracerOption is a function that sets some option on the tracer

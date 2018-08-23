@@ -18,12 +18,12 @@ import (
 	"log"
 	"os"
 
-	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-lib/metrics"
+	opentracing "gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
-	"github.com/uber/jaeger-client-go"
-	jaegercfg "github.com/uber/jaeger-client-go/config"
-	jaegerlog "github.com/uber/jaeger-client-go/log"
+	"github.com/frrist/jaeger-client-go"
+	jaegercfg "github.com/frrist/jaeger-client-go/config"
+	jaegerlog "github.com/frrist/jaeger-client-go/log"
 )
 
 func ExampleConfiguration_InitGlobalTracer_testing() {
@@ -39,7 +39,7 @@ func ExampleConfiguration_InitGlobalTracer_testing() {
 		},
 	}
 
-	// Example logger and metrics factory. Use github.com/uber/jaeger-client-go/log
+	// Example logger and metrics factory. Use github.com/frrist/jaeger-client-go/log
 	// and github.com/uber/jaeger-lib/metrics respectively to bind to real logging and metrics
 	// frameworks.
 	jLogger := jaegerlog.StdLogger
@@ -64,7 +64,7 @@ func ExampleConfiguration_InitGlobalTracer_production() {
 	// Recommended configuration for production.
 	cfg := jaegercfg.Configuration{}
 
-	// Example logger and metrics factory. Use github.com/uber/jaeger-client-go/log
+	// Example logger and metrics factory. Use github.com/frrist/jaeger-client-go/log
 	// and github.com/uber/jaeger-lib/metrics respectively to bind to real logging and metrics
 	// frameworks.
 	jLogger := jaegerlog.StdLogger

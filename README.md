@@ -6,7 +6,7 @@ Instrumentation library that implements an
 [OpenTracing](http://opentracing.io) Tracer for Jaeger (https://jaegertracing.io).
 
 **IMPORTANT**: The library's import path is based on its original location under `github.com/uber`. Do not try to import it as `github.com/jaegertracing`, it will not compile. We might revisit this in the next major release.
-  * :white_check_mark: `import "github.com/uber/jaeger-client-go"`
+  * :white_check_mark: `import "github.com/frrist/jaeger-client-go"`
   * :x: `import "github.com/jaegertracing/jaeger-client-go"`
 
 ## How to Contribute
@@ -20,7 +20,7 @@ and [semantic versioning](http://semver.org/) when including this library into a
 For example, Jaeger backend imports this library like this:
 
 ```yaml
-- package: github.com/uber/jaeger-client-go
+- package: github.com/frrist/jaeger-client-go
   version: ^2.7.0
 ```
 
@@ -30,15 +30,15 @@ we recommend using semantic versions for dependencies.  The error  may be fixed 
 `make install` (it will install `glide` if you don't have it):
 
 ```shell
-go get -u github.com/uber/jaeger-client-go/
-cd $GOPATH/src/github.com/uber/jaeger-client-go/
+go get -u github.com/frrist/jaeger-client-go/
+cd $GOPATH/src/github.com/frrist/jaeger-client-go/
 git submodule update --init --recursive
 make install
 ```
 
 ## Initialization
 
-See tracer initialization examples in [godoc](https://godoc.org/github.com/uber/jaeger-client-go/config#pkg-examples)
+See tracer initialization examples in [godoc](https://godoc.org/github.com/frrist/jaeger-client-go/config#pkg-examples)
 and [config/example_test.go](./config/example_test.go).
 
 ### Environment variables
@@ -105,7 +105,7 @@ constructor, for example:
 
 ```go
 import (
-    "github.com/uber/jaeger-client-go/config"
+    "github.com/frrist/jaeger-client-go/config"
     "github.com/uber/jaeger-lib/metrics/prometheus"
 )
 
@@ -258,8 +258,8 @@ However it is not the default propagation format, see [here](zipkin/README.md#Ne
 [Apache 2.0 License](LICENSE).
 
 
-[doc-img]: https://godoc.org/github.com/uber/jaeger-client-go?status.svg
-[doc]: https://godoc.org/github.com/uber/jaeger-client-go
+[doc-img]: https://godoc.org/github.com/frrist/jaeger-client-go?status.svg
+[doc]: https://godoc.org/github.com/frrist/jaeger-client-go
 [ci-img]: https://travis-ci.org/jaegertracing/jaeger-client-go.svg?branch=master
 [ci]: https://travis-ci.org/jaegertracing/jaeger-client-go
 [cov-img]: https://codecov.io/gh/jaegertracing/jaeger-client-go/branch/master/graph/badge.svg

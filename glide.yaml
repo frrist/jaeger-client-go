@@ -1,4 +1,4 @@
-package: github.com/uber/jaeger-client-go
+package: github.com/frrist/jaeger-client-go
 import:
 - package: github.com/opentracing/opentracing-go
   version: ^1

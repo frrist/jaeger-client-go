@@ -22,9 +22,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/uber/jaeger-client-go/thrift-gen/jaeger"
-	"github.com/uber/jaeger-client-go/thrift-gen/sampling"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/frrist/jaeger-client-go/thrift-gen/jaeger"
+	"github.com/frrist/jaeger-client-go/thrift-gen/sampling"
+	"github.com/frrist/jaeger-client-go/utils"
 )
 
 func TestMockAgentSpanServer(t *testing.T) {
